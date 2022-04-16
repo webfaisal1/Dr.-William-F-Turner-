@@ -1,0 +1,11 @@
+.footer{
+  color: rgba(245, 245, 220, 0.884);
+  font-weight: 200;
+}
+.copyright{
+  color: gray;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
