@@ -10,14 +10,13 @@
 }
 .heading {
   position: absolute;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   top: 30%;
   left: 25%;
   transform: translate(-50%, 50%);
-  color: #2727cca4;
+  color: #2727ccbd;
 }
 .heading h1 {
-
-  
   font-weight: 700;
   font-size: 50px;
 }
@@ -26,7 +25,7 @@
   border-radius: 10px;
   padding: 10px 12px;
   color: #ffffff;
-  background-color: #2727cca4;
+  background-color: #2727ccc9;
 }
 @media only screen and (max-width: 576px) {
   .heading {

@@ -25,13 +25,9 @@ const Header = () => {
               </Nav.Link>
             </Nav>
 
-          
-
             <div className="btn-style d-sm-block">
-               <Link to="/login">
-                Login
-              </Link> 
-               <Link to="signUp">
+              <Link to="/login">Login</Link>
+              <Link to="signUp">
                 <button>Sign Up</button>
               </Link>
             </div>

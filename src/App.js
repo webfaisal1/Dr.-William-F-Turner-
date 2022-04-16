@@ -6,8 +6,8 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home/Home";
 import About from "./pages/Home/About/About";
 import Blog from "./pages/Home/Blog/Blog";
-import Login from "./pages/Home/Login/Login";
-import SignUp from "./pages/Home/SignUp/SignUp";
+import Login from "./pages/Shared/Header/Login/Login";
+import SignUp from "./pages/Shared/Header/SignUp/SignUp";
 
 function App() {
   return (
