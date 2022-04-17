@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 import './ServicesCard.css'
 
 const ServicesCard = ({ service }) => {
@@ -11,7 +12,7 @@ const ServicesCard = ({ service }) => {
           <div className="card-body">
             <h5 className="card-title">{name}</h5>
             <p className="card-text">{details.slice(0,80)}...</p>
-            <button>Check out</button>
+            <Link to='/checkOut' ><button>Check out</button></Link>
           </div>
         </div>
       </div>

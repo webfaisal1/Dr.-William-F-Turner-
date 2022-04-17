@@ -1,0 +1,49 @@
+.bg-color{
+ background: #ecf0f3;
+}
+
+label{
+   margin-left: 16px;
+   margin-bottom: 10px;
+   color: gray;
+}
+
+.form-container input{
+  width: 300px;
+  border: none ;
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 100px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+.form-container button{
+  background-color: #4F52FF;
+  width: 100%;
+  border-radius: 8px;
+}
+.or-style{
+  height: 1px;
+  background-color: gray;
+}
+.pointer img{
+  cursor: pointer;
+}
+.login{
+  justify-content: end;
+  display: flex;
+  color: #4f52ffea;
+  align-items: flex-end;
+}
+
+@media (max-width: 576px) { 
+    .img-container img{
+        width: 300px;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+ }

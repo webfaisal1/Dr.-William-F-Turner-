@@ -1,4 +1,7 @@
 import React, { Fragment } from "react";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import './Footer.css'
 
 const Footer = () => {
@@ -19,23 +22,25 @@ const Footer = () => {
         </div>
         <div className="col-md-3 footer">
           <h6 className="mb-4">QuickLinks</h6>
-          <h6>Homepages</h6>
-          <h6>About</h6>
-          <h6>Doctor</h6>
-          <h6>Department</h6>
-          <h6>News</h6>
-          <h6>Contact</h6>
+         
+         <h6 className="hover-style" >Homepages</h6>
+          <h6 className="hover-style">About</h6>
+          <h6 className="hover-style">Doctor</h6>
+          <h6 className="hover-style">Department</h6>
+          <h6 className="hover-style">News</h6>
+          <h6 className="hover-style">Contact</h6>
+         
         </div>
         <div className="col-md-3 footer">
           <h6 className="mb-4">Press</h6>
-          <h6>Press Release</h6>
-          <h6>Contact Us</h6>
-          <h6>Family Help</h6>
+          <h6 className="hover-style">Press Release</h6>
+          <h6 className="hover-style">Contact Us</h6>
+          <h6 className="hover-style">Family Help</h6>
         </div>
         <div className="col-md-3 footer">
-          <h6 className="mb-4">Address</h6>
-          <h6>+1 222 333 444</h6>
-          <h6>dr.williamfturner@gmail.com</h6>
+          <h6 className="mb-4"> <FontAwesomeIcon className="text-primary" icon={faLocationDot} /> Address</h6>
+          <h6 className="hover-style"> <FontAwesomeIcon className="text-primary" icon={faPhone} /> +1 222 333 444</h6>
+          <h6 className="hover-style"> <FontAwesomeIcon className="text-primary" icon={faEnvelope} /> dr.williamfturner@gmail.com</h6>
         </div>
         <p className="copyright">
           <small>Copyright {year} © Dr. William F Turner</small>
