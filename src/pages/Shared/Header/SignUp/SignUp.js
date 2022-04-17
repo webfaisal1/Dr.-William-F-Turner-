@@ -19,7 +19,7 @@ const SignUp = () => {
     const navigate = useNavigate();
 
 
-    const [createUserWithEmailAndPassword, user1, loading, hookError] = useCreateUserWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword, user1, loading, hookError] = useCreateUserWithEmailAndPassword(auth , {sendEmailVerification: true});
 
     const [signInWithGoogle, user2] = useSignInWithGoogle(auth);
     const [signInWithGithub, user3] = useSignInWithGithub(auth);

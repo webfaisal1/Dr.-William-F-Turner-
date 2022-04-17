@@ -2,36 +2,42 @@
   {
     "id": 1,
     "name": "Lung Diseases",
+    "price": 45.53,
     "details": "Airway diseases -- These diseases affect the tubes (airways) that carry oxygen and other gases into and out of the lungs. They usually cause a narrowing or blockage of the airways. Airway diseases include asthma, chronic obstructive pulmonary disease (COPD) and bronchiectasis. People with airway diseases often say they feel as if they're trying to breathe out through a straw.",
     "img": "https://i.ibb.co/3hv305P/services1.jpg"
   },
   {
     "id": 2,
     "name": "Heart Diseases",
+    "price": 85.39,
     "details": "If you're like most people, you think that heart disease is a problem for others. But heart disease is the number one killer in the U.S. It is also a major cause of disability. There are many different forms of heart disease. The most common cause of heart disease is narrowing or blockage of the coronary arteries, the blood vessels that supply blood to the heart itself. This is called coronary artery disease and happens slowly over time. It's the major reason people have heart attacks.",
     "img": "https://i.ibb.co/n7yb2gY/services2.jpg"
   },
   {
     "id": 3,
     "name": "Orthopaedic",
+    "price":  45.69,
     "details": "Orthopedic surgery or orthopedics, is the branch of surgery concerned with conditions involving the musculoskeletal system. Orthopedic surgeons use both surgical and nonsurgical means to treat musculoskeletal trauma, spine diseases, sports injuries, degenerative diseases, infections, tumors, and congenital disorders",
     "img": "https://i.ibb.co/998Ydvk/services6.jpg"
   },
   {
     "id": 4,
     "name": "General Surgery",
+    "price": 56.95,
     "details": "General surgery is a surgical specialty that focuses on abdominal contents including the esophagus, stomach, small intestine, large intestine, liver, pancreas, gallbladder, appendix and bile ducts, and often the thyroid gland.",
     "img": "https://i.ibb.co/Gkcn4dN/services3.jpg"
   },
   {
     "id": 5,
     "name": "Fever & Flu",
+    "price": 14.39,
     "details": "Most people who get flu will recover in a few days to less than two weeks, but some people will develop complications (such as pneumonia) as a result of flu, some of which can be life-threatening and result in death.",
     "img": "https://i.ibb.co/YWzKpQf/services4.jpg"
   },
   {
     "id": 6,
     "name": "Dental Service",
+    "price": 15.25,
     "details": "Dentistry usually encompasses practices related to the oral cavity. According to the World Health Organization, oral diseases are major public health problems due to their high incidence and prevalence across the globe, with the disadvantaged affected more than other socio-economic groups",
     "img": "https://i.ibb.co/XLSjs1w/services5.jpg"
   }

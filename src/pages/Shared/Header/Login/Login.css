@@ -19,11 +19,18 @@ label{
   border-radius: 100px;
   box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
-.form-container button{
+/* .form-container button{
+  background-color: #4F52FF;
+  width: 100%;
+  border-radius: 8px;
+} */
+
+.login-btn{
   background-color: #4F52FF;
   width: 100%;
   border-radius: 8px;
 }
+
 .or-style{
   height: 1px;
   background-color: gray;
@@ -36,6 +43,11 @@ label{
   display: flex;
   color: #4f52ffea;
   align-items: flex-end;
+}
+.reset-password{
+  color: #4f52ffea;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 @media (max-width: 576px) { 
