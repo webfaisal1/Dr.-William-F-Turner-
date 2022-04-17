@@ -15,11 +15,10 @@ const Login = () => {
   
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
   const navigate = useNavigate();
   const location = useLocation();
 
-  const [signInWithEmailAndPassword, user, loading, hookError] =  useSignInWithEmailAndPassword(auth);
+  const [signInWithEmailAndPassword, user, loading, error] =  useSignInWithEmailAndPassword(auth);
 
   const [signInWithGoogle] = useSignInWithGoogle(auth);
 
@@ -59,6 +58,9 @@ const Login = () => {
                 <Form.Label>Password</Form.Label>
                 <Form.Control onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" />
               </Form.Group>
+
+                  <p className="text-danger" >{error && error?.message}</p>
+
               <Link to="/signUp">
                 <p>
                   <small className="login">Create an account</small>

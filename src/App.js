@@ -10,6 +10,7 @@ import Login from "./pages/Shared/Header/Login/Login";
 import SignUp from "./pages/Shared/Header/SignUp/SignUp";
 import RequireAuth from "./pages/RequireAuth/RequireAuth";
 import CheckOut from "./pages/Home/CheckOut/CheckOut";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -30,9 +31,11 @@ function App() {
           }
         ></Route>
         <Route path="/signUp" element={<SignUp />}></Route>
+        <Route path="*" element={<NotFound/>} />
       </Routes>
-
+      
       <Footer />
+
     </Fragment>
   );
 }

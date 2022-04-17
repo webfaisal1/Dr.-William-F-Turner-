@@ -87,8 +87,8 @@ const SignUp = () => {
                   placeholder="Confirm Password"
                   required
                 />
-                <p className="mt-2 text-danger">{error}</p>
-                <p className="mt-2 text-danger">{hookError.message}</p>
+                {/* <p className="mt-2 text-danger">{error}</p> */}
+                <p className="mt-2 text-danger">{hookError?.message}</p>
               </Form.Group>
               <Link to="/login">
                 <p>
