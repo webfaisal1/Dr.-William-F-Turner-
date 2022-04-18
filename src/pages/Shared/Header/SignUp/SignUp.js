@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment,  useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import login from "../../../../images/form/form.png";
 import facebook from "../../../../images/social-icon/facebook.png";
@@ -31,13 +31,6 @@ const SignUp = () => {
     if(user1 || user2 || user3){
       navigate('/')
     }
-
- /*   useEffect(() => {
-    if(user1 || user2 || user3){
-      navigate('/')
-    }
-   }, [user1, user2, user3]) */
-
 
     const handleUserSignUp = event => {
       event.preventDefault();
@@ -96,7 +89,7 @@ const SignUp = () => {
                 </p>
               </Link>
 
-              <Button type="submit">Sign Up</Button>
+              <Button className="submit-btn" type="submit">Sign Up</Button>
 
               <div className="d-flex align-items-center">
                 <div className="or-style w-50"></div>

@@ -12,6 +12,7 @@ import RequireAuth from "./pages/RequireAuth/RequireAuth";
 import CheckOut from "./pages/Home/CheckOut/CheckOut";
 import NotFound from "./pages/NotFound/NotFound";
 
+
 function App() {
   return (
     <Fragment>

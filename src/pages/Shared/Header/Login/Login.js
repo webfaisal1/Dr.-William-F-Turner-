@@ -9,7 +9,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../../firebase.init";
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import Loading from "../../Loading/Loading";
-import { async } from "@firebase/util";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -86,7 +85,7 @@ const Login = () => {
                   <small className="login">Create an account</small>
                 </p>
               </Link>
-              <Button className="login-btn" type="submit">Login</Button>
+              <Button className="submit-btn" type="submit">Login</Button>
 
               <div className="d-flex align-items-center">
                 <div className="or-style w-50"></div>
