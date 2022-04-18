@@ -11,7 +11,7 @@ This project was bootstrapped with [Dr. William F Turner](https://dr-william-f-t
 - Sign-up page এ ক্লিক করলে sign-up form এ নিয়ে যাবে একটা ছবি আছে, Forget password আছে, Google, Facebook, Git hub দিয়ে login করার system আছে, login এ ক্লিক করলে login page এ নিয়ে যাবে
   -User যদি থাকে navbar এ sign-out button দেখাবে এবং সেখানে click করলে sign-out হয়ে যাবে।
 
-## This project Framework
+## This project Framework & Library
 
 1. React Route
 2. Bootstrap
