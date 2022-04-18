@@ -9,7 +9,7 @@ const About = () => {
         <div className=" col-md-6">
           <img width={400} src={aboutMe} alt="" />
         </div>
-        <div className=" text-start col-md-6">
+        <div className=" text-center text-md-start col-md-6">
           <h1>
             ABOUT <span className="me-color">ME</span>
           </h1>

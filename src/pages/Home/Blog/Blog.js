@@ -56,14 +56,21 @@ const Blog = () => {
               Why are you using firebase? What other options do you have to
               implement authentication?
             </Card.Title>
-            <Card.Text className="mt-5">hello</Card.Text>
+            <Card.Text className="mt-5">
+              Muntasir Ahmed Firebase can be seen as a server-less backend for
+              your mobile apps, web apps, etc. It is a service provided by
+              Google. As an Android developer I use Firebase in most of my
+              projects. It has many features like Realtime database, Cloud
+              functions, Analytics, Crashlytics, Cloud Firestore, etc. and i can
+              this optinons implement my project.
+            </Card.Text>
           </Card.Body>
         </Card>
 
         <Card className="m-5 border shadow-sm">
           <Card.Img variant="top" src={firebase2} />
           <Card.Body>
-            <Card.Title className="text-center" >
+            <Card.Title className="text-center">
               What other services does firebase provide other than
               authentication
             </Card.Title>

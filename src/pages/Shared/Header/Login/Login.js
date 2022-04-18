@@ -1,6 +1,6 @@
 import React, { Fragment, useRef,} from "react";
 import { Button, Form } from "react-bootstrap";
-import login from "../../../../images/form/form.png";
+import login from "../../../../images/form/login.png";
 import facebook from "../../../../images/social-icon/facebook.png";
 import google from "../../../../images/social-icon/google.png";
 import github from "../../../../images/social-icon/github.png";

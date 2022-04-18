@@ -1,0 +1,38 @@
+[
+ {
+    "id": 1,
+    "name": "Cardiologist",
+    "details": "A cardiologist is a doctor that deals with the cardiovascular system. This means he or she treats any abnormality in our blood vessels and heart. This can include heart disease or condition which requires diagnosis and treatment.",
+    "img": "https://i.ibb.co/TYqsqhB/experiences1.png"
+  },
+  {
+    "id": 2,
+    "name": "Audiologist",
+    "details": "As the name suggests, an audiologist treats and evaluates anything and everything to do with audio or hearing abilities of a person. Since hearing is a very important sense, it requires an expert to treat the same.",
+    "img": "https://i.ibb.co/2FCdyjc/healthinsurance303.png"
+  },
+  {
+    "id": 3,
+    "name": "Dentist",
+    "details": "According to American Dental Association, a dentist is a doctor of oral health. Oral health includes teeth, tongue and gums. A dentist is known to diagnose and treat issues of these three areas.",
+    "img": "https://i.ibb.co/N65xk7T/experiences3.png"
+  },
+  {
+    "id": 4,
+    "name": "Gynaecologist",
+    "details": "A gynaecologist is trained to treat the female reproductive system which includes the vagina, uterus, ovaries and breasts.",
+    "img": "https://i.ibb.co/Kxb4rRT/experiences4.png"
+  },
+  {
+    "id": 5,
+    "name": "Paediatrician",
+    "details": "Paediatricians are doctors who treat children. Since a child’s body functions in a different manner from ours, due to many factors like age and growing stages, their illness and health issues are different from an adult. A paediatrician helps in mental behaviour issues and physical health problems.",
+    "img": "https://i.ibb.co/6mgQ051/experiences5.webp"
+  },
+  {
+    "id": 6,
+    "name": "Veterinarian",
+    "details": " After the uniqueness of mental health, comes the issue of our furr buddies: animals. Treatment and diagnosis of issues in animals is done by a veterinarian. This includes mental and physical both as well.",
+    "img": "https://i.ibb.co/FmVkzQP/experiences6.png"
+  }
+]

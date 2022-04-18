@@ -1,81 +1,98 @@
-import React, { Fragment,  useState } from "react";
+import React, { Fragment, useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import login from "../../../../images/form/form.png";
+import signUp from "../../../../images/form/signup.png";
 import facebook from "../../../../images/social-icon/facebook.png";
 import google from "../../../../images/social-icon/google.png";
 import github from "../../../../images/social-icon/github.png";
 import { Link, useNavigate } from "react-router-dom";
-import { useCreateUserWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import auth from '../../../../firebase.init'
+import {
+  useCreateUserWithEmailAndPassword,
+  useSignInWithGithub,
+  useSignInWithGoogle,
+} from "react-firebase-hooks/auth";
+import auth from "../../../../firebase.init";
 import Loading from "../../Loading/Loading";
 
 const SignUp = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState('');
-    const [error, setError] = useState('');
-    const navigate = useNavigate();
+  const [createUserWithEmailAndPassword, user1, loading, hookError] =
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
+  const [signInWithGoogle, user2] = useSignInWithGoogle(auth);
+  const [signInWithGithub, user3] = useSignInWithGithub(auth);
 
-    const [createUserWithEmailAndPassword, user1, loading, hookError] = useCreateUserWithEmailAndPassword(auth , {sendEmailVerification: true});
+  if (loading) {
+    return <Loading />;
+  }
 
-    const [signInWithGoogle, user2] = useSignInWithGoogle(auth);
-    const [signInWithGithub, user3] = useSignInWithGithub(auth);
+  if (user1 || user2 || user3) {
+    navigate("/");
+  }
 
-    if(loading){
-      return <Loading/>
+  const handleUserSignUp = (event) => {
+    event.preventDefault();
+
+    if (password !== confirmPassword) {
+      setError("Password did not match confirm password");
+      return;
     }
-
-    if(user1 || user2 || user3){
-      navigate('/')
+    if (password.length < 6) {
+      setError("Password must be 6 character type");
+      return;
     }
-
-    const handleUserSignUp = event => {
-      event.preventDefault();
-       
-       
-       if(password !== confirmPassword){
-        setError('Password did not match confirm password')
-        return;
-      }
-      if(password.length < 6){
-        setError('Password must be 6 character type')
-        return;
-      }
-      createUserWithEmailAndPassword(email, password)
-    }
+    createUserWithEmailAndPassword(email, password);
+  };
 
   return (
     <Fragment>
-      <div className="vh-80 bg-color">
+      <div className="pb-5 bg-color">
         <div className="row mx-0">
           <div className="col-md-6 img-container ">
-            <img className="img-fluid" src={login} alt="" />
+            <img className="img-fluid" src={signUp} alt="" />
           </div>
           <div className="col-md-6 align-items-center justify-content-center d-flex form-container">
-            <Form onSubmit={handleUserSignUp} >
+            <Form onSubmit={handleUserSignUp}>
               <h2 className="text-center ">Sign Up</h2>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Name</Form.Label>
-                <Form.Control onChange={(e) => setName(e.target.value)} type="text" placeholder="Enter name" required />
+                <Form.Control
+                  onChange={(e) => setName(e.target.value)}
+                  type="text"
+                  placeholder="Enter name"
+                  required
+                />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Enter email" required />
+                <Form.Control
+                  onChange={(e) => setEmail(e.target.value)}
+                  type="email"
+                  placeholder="Enter email"
+                  required
+                />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
-                <Form.Control onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" required />
+                <Form.Control
+                  onChange={(e) => setPassword(e.target.value)}
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Confirm Password</Form.Label>
                 <Form.Control
-                    onChange={(e) => setConfirmPassword(e.target.value)}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
                   type="password"
                   placeholder="Confirm Password"
                   required
@@ -89,7 +106,9 @@ const SignUp = () => {
                 </p>
               </Link>
 
-              <Button className="submit-btn" type="submit">Sign Up</Button>
+              <Button className="submit-btn" type="submit">
+                Sign Up
+              </Button>
 
               <div className="d-flex align-items-center">
                 <div className="or-style w-50"></div>
@@ -100,9 +119,19 @@ const SignUp = () => {
               <div className="pointer justify-content-between d-flex">
                 <img width={30} src={facebook} alt="" />
 
-                <img onClick={() => signInWithGoogle()} width={30} src={google} alt="" />
-                
-                <img onClick={() =>signInWithGithub()} width={30} src={github} alt="" />
+                <img
+                  onClick={() => signInWithGoogle()}
+                  width={30}
+                  src={google}
+                  alt=""
+                />
+
+                <img
+                  onClick={() => signInWithGithub()}
+                  width={30}
+                  src={github}
+                  alt=""
+                />
               </div>
             </Form>
           </div>
