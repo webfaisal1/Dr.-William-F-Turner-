@@ -1,0 +1,31 @@
+.about-me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ecf0f3;
+}
+
+.about-me h1{
+  color: #eb887e;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+.me-color{
+  color: #7152ff;
+}
+.about-me h3{
+    color: #eb887e;
+    font-weight: 600;
+}
+.p-color{
+  color: darkslateblue;
+}
+.focus{
+  color: mediumblue;
+  font-weight: 500;
+}
+.dev-color{
+  color: #4417c0;
+  font-weight: 500;
+}
