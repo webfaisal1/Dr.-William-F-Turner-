@@ -57,7 +57,7 @@ const Login = () => {
 
   return (
     <Fragment>
-      <div className=" bg-color c">
+      <div className=" bg-color pb-5">
         <div className="row mx-0">
           <div className="col-md-6 img-container ">
             <img className="img-fluid" src={login} alt="" />
