@@ -28,9 +28,9 @@ const Login = () => {
   
   let from = location.state?.from?.pathname || "/";
 
-  if(loading || sending){
-    return <Loading/>
-  }
+  // if(loading || sending){
+  //   return <Loading/>
+  // }
   
 
   if(user){

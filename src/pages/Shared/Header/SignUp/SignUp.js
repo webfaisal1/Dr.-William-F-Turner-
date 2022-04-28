@@ -27,9 +27,9 @@ const SignUp = () => {
   const [signInWithGoogle, user2] = useSignInWithGoogle(auth);
   const [signInWithGithub, user3] = useSignInWithGithub(auth);
 
-  if (loading) {
-    return <Loading />;
-  }
+  // if (loading) {
+  //   return <Loading />;
+  // }
 
   if (user1 || user2 || user3) {
     navigate("/");
@@ -59,7 +59,7 @@ const SignUp = () => {
           <div className="col-md-6 align-items-center justify-content-center d-flex form-container">
             <Form onSubmit={handleUserSignUp}>
               <h2 className="text-center ">Sign Up</h2>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Group className="mb-3" controlId="formBasicEmail1">
                 <Form.Label>Name</Form.Label>
                 <Form.Control
                   onChange={(e) => setName(e.target.value)}
@@ -79,7 +79,7 @@ const SignUp = () => {
                 />
               </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Group className="mb-3" controlId="formBasicPassword1">
                 <Form.Label>Password</Form.Label>
                 <Form.Control
                   onChange={(e) => setPassword(e.target.value)}
@@ -97,7 +97,7 @@ const SignUp = () => {
                   placeholder="Confirm Password"
                   required
                 />
-                {/* <p className="mt-2 text-danger">{error}</p> */}
+                <p className="mt-2 text-danger">{error}</p>
                 <p className="mt-2 text-danger">{hookError?.message}</p>
               </Form.Group>
               <Link to="/login">
